@@ -8,9 +8,9 @@ return [
 		*	Make sure the method exists in the class while adding actions, otherwise the application may crash!
 		*/
 
-	'landing' => 'HomeController@welcome',
+	'landing' => 'PublicController@welcome',
 
-	'error' => 'HomeController@error',
+	'error' => 'PublicController@error',
 
 		/* 
 		*	Declaring default api url prefix

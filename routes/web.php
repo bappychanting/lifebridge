@@ -10,7 +10,7 @@ return [
 
 		// public pages
 
-	'welcome' => 'HomeController@welcome',
+	'welcome' => 'PublicController@welcome',
 
 		// Admin Authentication Pages
 

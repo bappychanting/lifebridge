@@ -12,52 +12,52 @@ return [
 
 	'welcome' => 'HomeController@welcome',
 
-		// Authenticated Pages
+		// Admin Authentication Pages
 
-	'signin' => 'User/AuthController@signin',
+	'admin/signin' => 'Admin/User/AuthController@signin',
 
-	'captcha' => 'User/AuthController@checkCaptcha',
+	'admin/captcha' => 'Admin/User/AuthController@checkCaptcha',
 
-	'login' => 'User/AuthController@login',
+	'admin/login' => 'Admin/User/AuthController@login',
 
-	'signup' => 'User/AuthController@signup',
+	'admin/password/forgot' => 'Admin/User/AuthController@forgotPassword',
 
-	'register' => 'User/AuthController@register',
+	'admin/password/mail' => 'Admin/User/AuthController@sendResetInfo',
 
-	'password/forgot' => 'User/AuthController@forgotPassword',
+	'admin/password/reset' => 'Admin/User/AuthController@resetPassword',
 
-	'password/mail' => 'User/AuthController@sendResetInfo',
+	'admin/password/update' => 'Admin/User/AuthController@updatePassword',
 
-	'password/reset' => 'User/AuthController@resetPassword',
+	'admin/signout' => 'Admin/User/AuthController@signout',
 
-	'password/update' => 'User/AuthController@updatePassword',
+	'admin/dashboard' => 'Admin/DashboardController@dashboard',
 
-	'signout' => 'User/AuthController@signout',
+		// Admin items pages
 
-	'home' => 'HomeController@home',
+	'admin/items/all' => 'Admin/ItemController@index',
 
-	'items/all' => 'ItemController@index',
+	'admin/items/create' => 'Admin/ItemController@create',
 
-	'items/create' => 'ItemController@create',
+	'admin/items/store' => 'Admin/ItemController@store',
 
-	'items/store' => 'ItemController@store',
+	'admin/items/show' => 'Admin/ItemController@show',
 
-	'items/show' => 'ItemController@show',
+	'admin/items/edit' => 'Admin/ItemController@edit',
 
-	'items/edit' => 'ItemController@edit',
+	'admin/items/update' => 'Admin/ItemController@update',
 
-	'items/update' => 'ItemController@update',
+	'admin/items/delete' => 'Admin/ItemController@delete',
 
-	'items/delete' => 'ItemController@delete',
+		// Admin items pages
 
-	'user/show' => 'User/UserController@show',
+	'admin/user/show' => 'Admin/User/UserController@show',
 
-	'user/edit' => 'User/UserController@edit',
+	'admin/user/edit' => 'Admin/User/UserController@edit',
 
-	'user/edit/password' => 'User/UserController@editPassword',
+	'admin/user/edit/password' => 'Admin/User/UserController@editPassword',
 
-	'user/update' => 'User/UserController@update',
+	'admin/user/update' => 'Admin/User/UserController@update',
 
-	'user/update/password' => 'User/UserController@updatePassword',
+	'admin/user/update/password' => 'Admin/User/UserController@updatePassword',
 
 ];

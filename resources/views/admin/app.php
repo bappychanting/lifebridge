@@ -35,21 +35,21 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <?php $auth = new Base\Authenticable; if($auth->check()){ ?>
           <ul class="navbar-nav mr-auto">
-            <li class="nav-item <?php echo route_is('home') ? 'active' : '' ?>">
-              <a class="nav-link" href="<?php echo route('home'); ?>"><span class="oi oi-home pr-2"></span>Home <span class="sr-only">(current)</span></a>
+            <li class="nav-item <?php echo route_is('admin/dashboard') ? 'active' : '' ?>">
+              <a class="nav-link" href="<?php echo route('admin/dashboard'); ?>"><span class="oi oi-home pr-2"></span>Home <span class="sr-only">(current)</span></a>
             </li>
-            <li class="nav-item <?php echo route_is('items') ? 'active' : '' ?>">
-              <a class="nav-link" href="<?php echo route('items/all'); ?>"><span class="oi oi-list pr-2"></span>Items <span class="sr-only">(current)</span></a>
+            <li class="nav-item <?php echo route_is('admin/items') ? 'active' : '' ?>">
+              <a class="nav-link" href="<?php echo route('admin/items/all'); ?>"><span class="oi oi-list pr-2"></span>Items <span class="sr-only">(current)</span></a>
             </li>
           </ul>
           <span class="navbar-text">
             <ul class="navbar-nav mr-auto">
-              <li class="nav-item <?php echo route_is('user') ? 'active' : '' ?>">
-                <a class="nav-link" href="<?php echo route('user/show'); ?>"><span class="oi oi-person pr-2"></span>Account</a>
+              <li class="nav-item <?php echo route_is('admin/user') ? 'active' : '' ?>">
+                <a class="nav-link" href="<?php echo route('admin/user/show'); ?>"><span class="oi oi-person pr-2"></span>Account</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="javascript:void(0);" onclick="signout();"><span class="oi oi-account-logout pr-2"></span>Sign Out</a>
-                <form id="signout-form" action="<?php echo route('signout') ?>" method="POST" style="display: none;">
+                <form id="signout-form" action="<?php echo route('admin/signout') ?>" method="POST" style="display: none;">
                   <input type="hidden" name="_token" value="<?php echo csrf_token(); ?>">
                 </form>
               </li>
@@ -67,10 +67,7 @@
               <span class="navbar-text">
                 <ul class="navbar-nav mr-auto">
                   <li class="nav-item">
-                    <a class="nav-link <?php echo route_is('signup') ? 'active' : ''; ?>" href="<?php echo route('signup'); ?>"><span class="oi oi-pencil pr-2"></span>Sign Up</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link <?php echo route_is('signin') ? 'active' : ''; ?>" href="<?php echo route('signin'); ?>"><span class="oi oi-account-login pr-2"></span>Sign In</a>
+                    <a class="nav-link <?php echo route_is('admin/signin') ? 'active' : ''; ?>" href="<?php echo route_is('admin/signin') ? 'javascript:void(0);' : route('admin/signin'); ?>"><span class="oi oi-account-login pr-2"></span>Sign In</a>
                   </li>
                 </ul>
               </span>

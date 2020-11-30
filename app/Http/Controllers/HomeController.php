@@ -12,12 +12,6 @@ class HomeController extends Controller
         return $this->view('welcome');
     }
 
-    public function home() 
-    {
-        $this->guard('CheckAuth');
-        return $this->view('home');
-    }
-
     public function testApi() 
     {
         echo ApiHelper::success();

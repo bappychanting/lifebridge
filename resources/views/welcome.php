@@ -47,7 +47,7 @@
       </h1>
       <p class="my-5">
         <a href="http://mhasan.amrameghnabasi.org/codecube-framework/" class="mx-5">Documentation</a>
-        <a href="/signin" class="mx-5">Demo App</a>
+        <a href="admin/signin" class="mx-5">Demo App</a>
         <a href="/database_migration" class="mx-5">Migration</a>
         <a href="http://mhasan.amrameghnabasi.org" class="mx-5">About Developer</a>
       </p> 

@@ -1,3 +1,18 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+footer {
+    display:none;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: auto;
+    width: 100%;
+}
+
+
 #scrollToTopButton { 
   margin: 0px auto; 
   position: fixed; 
